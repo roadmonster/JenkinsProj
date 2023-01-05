@@ -1,0 +1,5 @@
+FROM openjdk:11
+EXPOSE 8080
+WORKDIR /code
+ADD jarfile/demo*.jar /code/app.jar
+ENTRYPOINT ["java", "-jar", "/code/app.jar"]
